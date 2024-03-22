@@ -1,0 +1,666 @@
+{
+	"info": {
+		"_postman_id": "095d579f-693a-4301-a59f-1212a58dab1e",
+		"name": "Onejio-Cron",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11496409"
+	},
+	"item": [
+		{
+			"name": "healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/healthcheck",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"healthcheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "application",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/application?id=65faef3f7e313aa54e9c56b1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"application"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "65faef3f7e313aa54e9c56b1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "application",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.00.1:8000/api/onejio-cron-service/application?id=65f94f98e46fe3831da26512",
+							"protocol": "http",
+							"host": [
+								"127",
+								"00",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"onejio-cron-service",
+								"application"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "65f94f98e46fe3831da26512"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-mOcrAOMF4cTxQe18z/ZgFBcsCrI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Mar 2024 08:51:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"auth\": {\n        \"bearerAuth\": {\n            \"token\": null\n        },\n        \"basicAuth\": null\n    },\n    \"_id\": \"65f94f98e46fe3831da26512\",\n    \"appName\": \"test-jca\",\n    \"description\": \"lorem ipsum\",\n    \"rootPath\": \"/api/test-jca/\",\n    \"apiList\": [],\n    \"createdAt\": \"2024-03-19T14:10:56.992Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "application",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/application?id=65f8232d310fb75cf3b1f6b1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"application"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "65f8232d310fb75cf3b1f6b1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "application",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.00.1:8000/api/onejio-cron-service/application?id=65f8232d310fb75cf3b1f6b1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"00",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"onejio-cron-service",
+								"application"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "65f8232d310fb75cf3b1f6b1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d-YsXYYNK8fAVMALJbtnZJD81Logk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Mar 2024 08:49:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Document deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appName\": \"DSM-JCA- 4\",\r\n    \"description\":\"lorem ipsum\",\r\n    \"rootPath\":\"/api/dsm-jca\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/application",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"application"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "application",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appName\": \"test-jca-new\",\r\n    \"description\":\"lorem ipsum\",\r\n    \"rootPath\":\"/api/test-jca/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.00.1:8000/api/onejio-cron-service/application",
+							"protocol": "http",
+							"host": [
+								"127",
+								"00",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"onejio-cron-service",
+								"application"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-mfFun71fRzwC1XpY60VZ5IFXhnI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Mar 2024 13:00:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Application Created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "application",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appName\": \"test-jca-update\",\r\n    \"description\":\"lorem ipsum\",\r\n    \"rootPath\":\"/api/test-jca/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/application?id=65f8185bc131ec88906b8594",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"application"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "65f8185bc131ec88906b8594"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appId\": \"65faef3f7e313aa54e9c56b1\",\r\n    \"apiRoute\":\"donttouchthis\",\r\n    \"apiName\": \"dont touch this\",\r\n    \"requestType\":\"GET\",\r\n    \"triggerTime\":\"2024-03-21T14:39:02.772Z\",\r\n    \"frequency\": \"Hourly\",\r\n    \"rootPath\":\"/api/dsm-jca/\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/api",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"api"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "application Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appId\": \"65f83af6c38fc1bbdeee6e62\",\r\n    \"apiRoute\":\"posts\",\r\n    \"apiName\": \"New Post\",\r\n    \"requestType\":\"DELETE\",\r\n    \"triggerTime\":\"2024-03-19T14:16:02.772Z\",\r\n    \"frequency\": \"Hourly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.00.1:8000/api/onejio-cron-service/api",
+							"protocol": "http",
+							"host": [
+								"127",
+								"00",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"onejio-cron-service",
+								"api"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-mfFun71fRzwC1XpY60VZ5IFXhnI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Mar 2024 08:49:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Application Created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "api",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"_id\": \"65fc2c8a986998014a627f22\",\r\n        \"appId\": \"65faef3f7e313aa54e9c56b1\",\r\n        \"apiName\": \"Downloading Report \",\r\n        \"apiRoute\": \"processtesting\",\r\n        \"requestType\": \"GET\",\r\n        \"isActive\": false,\r\n        \"frequency\": \"Hourly\",\r\n        \"triggerTime\": \"2024-03-21T18:35:00.000Z\",\r\n        \"cronExpression\": \"* * * * *\",\r\n        \"createdAt\": \"2024-03-21T12:48:10.644Z\",\r\n        \"appName\": \"DSM-JCA\",\r\n        \"description\": \"lorem ipsum\",\r\n        \"rootPath\": \"/api/dsm-jca/\",\r\n        \"history\": [\r\n            {\r\n                \"time\": \"2024-03-21T18:34:00.570Z\",\r\n                \"triggerType\": \"Automatic\",\r\n                \"_id\": \"65fc30400eb79064b512f559\"\r\n            },\r\n            {\r\n                \"time\": \"2024-03-21T18:33:00.661Z\",\r\n                \"triggerType\": \"Automatic\",\r\n                \"_id\": \"65fc300461df33b9ec852060\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/api",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"api"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "api Copy",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\" : \"65f91ded80d91f7f42f840f9\",\r\n    \"appId\" : \"65f83af6c38fc1bbdeee6e62\",\r\n    \"apiRoute\" : \"newCron\",\r\n    \"requestType\" : \"PUT\",\r\n    \"isActive\" : true,\r\n    \"frequency\" : \"Hourly\",\r\n    \"triggetTime\" : \"2024-03-19T12:24:01.640Z\",\r\n    \"cronExpression\" : \"\",\r\n    \"appName\" : \"test-jca-new\",\r\n    \"description\" : \"lorem ipsum\",\r\n    \"rootPath\" : \"/api/test-jca/\",\r\n    \"history\" : [\r\n\r\n    ],\r\n    \"createdAt\" : \"2024-03-19T10:39:01.640+0000\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.00.1:8000/api/onejio-cron-service/api",
+							"protocol": "http",
+							"host": [
+								"127",
+								"00",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"onejio-cron-service",
+								"api"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-Cd+XPTE/zng/vflor4RUNzn4VIk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Mar 2024 07:15:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Cron Scheduled\""
+				}
+			]
+		},
+		{
+			"name": "api",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>ID</th>\r",
+							"        <th>App ID</th>\r",
+							"        <th>API Name</th>\r",
+							"        <th>Request Type</th>\r",
+							"        <th>Active</th>\r",
+							"        <th>Frequency</th>\r",
+							"        <th>Trigger Time</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    {{#each response}}\r",
+							"        <tr>\r",
+							"            <td>{{_id}}</td>\r",
+							"            <td>{{appId}}</td>\r",
+							"            <td>{{apiName}}</td>\r",
+							"            <td>{{requestType}}</td>\r",
+							"            <td>{{isActive}}</td>\r",
+							"            <td>{{frequency}}</td>\r",
+							"            <td>{{triggerTime}}</td>\r",
+							"        </tr>\r",
+							"    {{/each}}\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.json()}\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/api?appId=65faef3f7e313aa54e9c56b1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"api"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "appId",
+							"value": "65faef3f7e313aa54e9c56b1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.00.1:8000/api/onejio-cron-service/api?id=65fc2c3a986998014a627f1a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"00",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"onejio-cron-service",
+						"api"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "65fc2c3a986998014a627f1a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
